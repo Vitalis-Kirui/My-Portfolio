@@ -1,6 +1,11 @@
 /* Navbar styles */
 .navbar{
     background-color: rgba(26, 29, 95, 1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
 }
 
 .navbar a{
