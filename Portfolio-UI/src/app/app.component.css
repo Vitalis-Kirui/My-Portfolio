@@ -53,6 +53,7 @@
 #aboutme {
     padding-top: 2%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+    padding-bottom:5%;
 }
 
 .aboutme{
@@ -62,8 +63,8 @@
     color: rgba(32, 16, 134, 1);
 }
 
-#softwareDevelopment{
-    width: 75%;
+#softwareDevelopment, #design{
+    width: 65%;
     margin: auto;
 }
 
@@ -81,9 +82,5 @@
 #softwareDevelopment p, #design p{
     font-size: 18px;
     font-weight: 500;
-}
-
-#design{
-    width: 75%;
-    margin: auto;
+    color: rgba(32, 16, 134, 1);
 }
