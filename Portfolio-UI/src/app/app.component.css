@@ -1,0 +1,14 @@
+/* Navbar styles */
+.navbar{
+    background-color: rgba(26, 29, 95, 1);
+}
+
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.fas{
+    color: white;
+}
