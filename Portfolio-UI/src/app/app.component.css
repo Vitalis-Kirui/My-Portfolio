@@ -48,3 +48,37 @@
     font-weight: 700;
     color: black;
 }
+
+/* ABOUT ME STYLES */
+#aboutme {
+    padding-top: 2%;
+    background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+}
+
+.aboutme{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(32, 16, 134, 1);
+}
+
+#softwareDevelopment{
+    width: 75%;
+    margin: auto;
+}
+
+#softwareDevelopment h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgba(32, 16, 134, 1);
+}
+
+#reducedSize{
+    font-size: 25px;
+}
+
+#softwareDevelopment p{
+    font-size: 18px;
+    font-weight: 500;
+}
