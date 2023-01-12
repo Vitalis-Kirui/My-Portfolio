@@ -67,7 +67,7 @@
     margin: auto;
 }
 
-#softwareDevelopment h1{
+#softwareDevelopment h1, #design h1{
     font-size: 40px;
     font-weight: 900;
     text-transform: uppercase;
@@ -78,7 +78,12 @@
     font-size: 25px;
 }
 
-#softwareDevelopment p{
+#softwareDevelopment p, #design p{
     font-size: 18px;
     font-weight: 500;
+}
+
+#design{
+    width: 75%;
+    margin: auto;
 }
