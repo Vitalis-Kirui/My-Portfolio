@@ -320,6 +320,7 @@ h2{
 /* Contact me form */
 #contactme{
     margin-top: 7%;
+    padding-bottom: 5%;
 }
 
 .contactContent{
@@ -329,4 +330,11 @@ h2{
 
 .contactContent hr{
     padding-bottom: 3%;
+}
+
+form{
+    width: 55%;
+    margin: auto;
+    font-size: 25;
+    font-weight: 800;
 }
