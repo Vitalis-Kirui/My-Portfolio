@@ -242,6 +242,37 @@ h2{
 /* Projects and designs styles */
 #projectsAndDesign{
     background-color: rgba(26, 29, 95, 1);
+    position: relative;
+     z-index: 1;
+     margin-top: 5%;
+}
+
+#projectsAndDesign::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: inherit;
+    transform: skew(0, -3deg);
+    transform-origin: top left;
+}
+
+#projectsAndDesign::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: inherit;
+    transform: skew(0, -3deg);
+    transform-origin: bottom right;
 }
 
 .projectsAndDesign{
