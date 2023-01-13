@@ -199,6 +199,27 @@ h2{
     padding-bottom: 1%;
 }
 
+/* MY DEVELOPMENT PROCESS STYLES */
+#developmentprocess {
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+}
+
+.devContent{
+    width: 75%;
+    margin: auto;
+}
+
+#developmentprocess h1{
+    color: rgba(32, 16, 134, 1);
+    padding-bottom: 1%;
+}
+
+#developmentprocess p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* *{
     border: 1px solid red;
 } */
