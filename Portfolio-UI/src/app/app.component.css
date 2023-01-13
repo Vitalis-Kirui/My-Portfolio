@@ -1,3 +1,18 @@
+/* Universal styles */
+h1{
+    font-size: 40;
+    font-weight: 900;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#special, ol{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(32, 16, 134, 1);
+}
+
 /* Navbar styles */
 .navbar{
     background-color: rgba(26, 29, 95, 1);
@@ -5,7 +20,6 @@
     top: 0;
     left: 0;
     z-index: 9999;
-
 }
 
 .navbar a{
@@ -59,7 +73,6 @@
     padding-top: 2%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
     padding-bottom:10%;
-    min-height: 400px;
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
@@ -77,10 +90,11 @@
     margin: auto;
 }
 
+#design{
+    padding-top: 1%;
+}
+
 #softwareDevelopment h1, #design h1{
-    font-size: 40px;
-    font-weight: 900;
-    text-transform: uppercase;
     color: rgba(32, 16, 134, 1);
 }
 
@@ -92,4 +106,36 @@
     font-size: 18px;
     font-weight: 500;
     color: rgba(32, 16, 134, 1);
+}
+
+/* Education and skills styles */
+.educationANDskills{
+    padding-top: 2%;
+    background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+}
+
+.educationANDskills h1{
+    color: rgba(32, 16, 134, 1);
+}
+
+.education, .skills{
+    width: 65%;
+    margin: auto;
+}
+
+.education h1{
+    text-decoration: underline;
+    padding-bottom: 1%;
+}
+
+.education h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(32, 16, 134, 1);
+}
+
+.education p{
+    font-size: 18px;
+    font-weight: 500;
 }
