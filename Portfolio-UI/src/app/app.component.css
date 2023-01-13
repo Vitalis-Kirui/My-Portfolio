@@ -206,7 +206,7 @@ h2{
 }
 
 .devContent{
-    width: 75%;
+    width: 65%;
     margin: auto;
 }
 
@@ -224,7 +224,7 @@ h2{
     width: 100%;
 }
 
-.projectBirth img, .coding img{
+.projectBirth img, .coding img, .deployment img{
     width: 75%;
     /* margin: auto; */
     height: auto;
