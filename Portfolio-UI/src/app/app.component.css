@@ -128,7 +128,7 @@ h1{
     left: 0;
     /* border: 2px solid purple; */
     background: inherit;
-    transform: skew(0, -5deg);
+    transform: skew(0, -3.65deg);
     transform-origin: top left;
 }
 
