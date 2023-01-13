@@ -224,11 +224,11 @@ h2{
     width: 100%;
 }
 
-.projectBirth img{
-    width: 80%;
-    margin: auto;
+.projectBirth img, .coding img{
+    width: 75%;
+    /* margin: auto; */
     height: auto;
-    padding-left: 25%;
+    padding-left: 10%;
 }
 
 /* Design */
@@ -237,10 +237,10 @@ h2{
 }
 
 .design img{
-    width: 80%;
-    margin: auto;
+    width: 75%;
+    /* margin: auto; */
     height: auto;
-    padding-left: 25%;
+    padding-left: 10%;
 }
 
 /* *{
