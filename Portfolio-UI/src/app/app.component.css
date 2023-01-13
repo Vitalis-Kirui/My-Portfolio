@@ -139,3 +139,19 @@ h1{
     font-size: 18px;
     font-weight: 500;
 }
+
+/* Skills */
+.skillset{
+    width: 75%;
+    margin: auto;
+}
+
+.skills h5{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.skills hr{
+    padding-bottom: 1%;
+}
