@@ -316,3 +316,17 @@ h2{
     background-color: rgba(243, 249, 174, 1);
     margin-bottom: 2%;
 }
+
+/* Contact me form */
+#contactme{
+    margin-top: 7%;
+}
+
+.contactContent{
+    width: 65%;
+    margin: auto;
+}
+
+.contactContent hr{
+    padding-bottom: 3%;
+}
