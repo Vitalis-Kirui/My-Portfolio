@@ -85,7 +85,7 @@ h1{
     color: rgba(32, 16, 134, 1);
 }
 
-#softwareDevelopment, #design{
+#softwareDevelopment, #design, .specialMention{
     width: 65%;
     margin: auto;
 }
@@ -128,7 +128,7 @@ h1{
     padding-bottom: 1%;
 }
 
-.education h2{
+h2{
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -153,5 +153,19 @@ h1{
 }
 
 .skills hr{
+    padding-bottom: 1%;
+}
+
+/* Special mention */
+.specialMention{
+    padding-top: 3%;
+}
+
+.specialMention p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.specialMention h1{
     padding-bottom: 1%;
 }
