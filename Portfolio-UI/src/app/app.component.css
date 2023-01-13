@@ -231,6 +231,18 @@ h2{
     padding-left: 25%;
 }
 
+/* Design */
+.design{
+    width: 100%;
+}
+
+.design img{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding-left: 25%;
+}
+
 /* *{
     border: 1px solid red;
 } */
