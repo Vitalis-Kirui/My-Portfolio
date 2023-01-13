@@ -258,7 +258,7 @@ h2{
     padding-bottom: 3%;
 }
 
-.portfolio img{
+.portfolio img, .womenrep img, .sanctaury img{
     width: 75%;
     margin: auto;
     height: auto;
@@ -266,14 +266,14 @@ h2{
     margin-left: 25%;
 }
 
-.portfolio h2{
+.portfolio h2, .sanctaury h2, .womenrep h2{
     font-size: 25px;
     font-size: 800;
     color: white;
     padding-bottom: 2%;
 }
 
-.portfolio p{
+.portfolio p, .womenrep p, .sanctaury p{
     font-size: 18px;
     font-weight: 500;
     color: white;
