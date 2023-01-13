@@ -71,11 +71,10 @@ h1{
 /* ABOUT ME STYLES */
 #aboutme {
     padding-top: 2%;
-    background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
     padding-bottom:10%;
     width: 100%;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+    position: relative;
+    background-image: linear-gradient(to top, rgba(240, 0, 0, 0) , rgb(222, 231, 188));
 }
 
 .aboutme{
@@ -110,7 +109,6 @@ h1{
 
 /* Education and skills styles */
 .educationANDskills{
-    /* padding-top: 2%; */
     padding-bottom: 2%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
     position: relative;
@@ -126,7 +124,6 @@ h1{
     z-index: -1;
     top: 0;
     left: 0;
-    /* border: 2px solid purple; */
     background: inherit;
     transform: skew(0, -3.65deg);
     transform-origin: top left;
@@ -141,9 +138,8 @@ h1{
     z-index: -1;
     top: 0;
     left: 0;
-    /* border: 2px solid yellowgreen; */
     background: inherit;
-    transform: skew(0, -5deg);
+    transform: skew(0, -2deg);
     transform-origin: bottom right;
 }
 
