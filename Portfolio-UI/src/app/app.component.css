@@ -203,6 +203,7 @@ h2{
 #developmentprocess {
     width: 100%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+    padding-bottom: 3%;
 }
 
 .devContent{
@@ -220,29 +221,20 @@ h2{
     font-weight: 500;
 }
 
-.projectBirth{
-    width: 100%;
-}
-
 .projectBirth img, .coding img, .deployment img{
-    width: 75%;
-    /* margin: auto; */
+    width: 85%;
+    margin-left: 5%;
     height: auto;
     padding-left: 10%;
-}
-
-/* Design */
-.design{
-    width: 100%;
 }
 
 .design img{
-    width: 75%;
-    /* margin: auto; */
+    width: 85%;
+    margin-left: 5%;
     height: auto;
     padding-left: 10%;
 }
 
-/* *{
-    border: 1px solid red;
-} */
+.deployment p{
+    padding-top: 7%;
+}
