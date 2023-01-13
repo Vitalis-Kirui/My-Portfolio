@@ -110,8 +110,41 @@ h1{
 
 /* Education and skills styles */
 .educationANDskills{
-    padding-top: 2%;
+    /* padding-top: 2%; */
+    padding-bottom: 2%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
+    position: relative;
+    z-index: 1;
+}
+
+.educationANDskills::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* border: 2px solid purple; */
+    background: inherit;
+    transform: skew(0, -5deg);
+    transform-origin: top left;
+}
+
+.educationANDskills::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* border: 2px solid yellowgreen; */
+    background: inherit;
+    transform: skew(0, -5deg);
+    transform-origin: bottom right;
 }
 
 .educationANDskills h1{
@@ -169,3 +202,7 @@ h2{
 .specialMention h1{
     padding-bottom: 1%;
 }
+
+/* *{
+    border: 1px solid red;
+} */
