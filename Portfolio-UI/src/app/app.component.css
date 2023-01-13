@@ -203,7 +203,7 @@ h2{
 #developmentprocess {
     width: 100%;
     background-image: linear-gradient(to top, rgba(240, 0, 0, 0), rgb(222, 231, 188));
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 .devContent{
@@ -237,4 +237,44 @@ h2{
 
 .deployment p{
     padding-top: 7%;
+}
+
+/* Projects and designs styles */
+#projectsAndDesign{
+    background-color: rgba(32, 16, 134, 1);
+}
+
+.projectsAndDesign{
+    width: 65%;
+    margin: auto;
+}
+
+.projectsAndDesign h1{
+    color: white;
+    padding-bottom: 5%;
+}
+
+.portfolio{
+    padding-bottom: 3%;
+}
+
+.portfolio img{
+    width: 75%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 3%;
+    margin-left: 25%;
+}
+
+.portfolio h2{
+    font-size: 25px;
+    font-size: 800;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.portfolio p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
 }
