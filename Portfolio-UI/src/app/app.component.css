@@ -319,8 +319,10 @@ h2{
 
 /* Contact me form */
 #contactme{
-    margin-top: 7%;
-    padding-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: linear-gradient(to bottom, rgba(240, 0, 0, 0), rgb(222, 231, 188));
 }
 
 .contactContent{
@@ -337,4 +339,9 @@ form{
     margin: auto;
     font-size: 25;
     font-weight: 800;
+}
+
+form .btn{
+    color: black;
+    background-color: white;
 }
