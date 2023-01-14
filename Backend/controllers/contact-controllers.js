@@ -63,9 +63,27 @@ const deletemessage = (req, res) => {
         })
 };
 
+// Fetching unread messages
+const getunreadmessages = (req, res) => { 
+
+    Message.find({ status: 'unread' })
+        .then((unreadmessages) => {
+            
+            let total = unreadmessages.length;
+
+            res.json({ total: total, messages: unreadmessages });
+        }).
+        catch((error) => { 
+            res.json({ message: "An error occurred fetching unread messages" })
+            console.error(error);
+        });
+
+};
+
 module.exports = {
     contactme,
     getallmessages,
     getsinglemessage,
-    deletemessage
+    deletemessage,
+    getunreadmessages
 }
