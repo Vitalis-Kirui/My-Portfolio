@@ -48,8 +48,24 @@ const getsinglemessage = (req, res) => {
         })
 };
 
+// Deleting a message
+const deletemessage = (req, res) => { 
+
+    let id = req.params.id;
+
+    Message.findByIdAndDelete(id)
+        .then((success) => {
+            res.json({message: "Message deleted successfully"})
+        })
+        .catch((error) => { 
+            res.json({ message: "Error deleting message" })
+            console.log(error)
+        })
+};
+
 module.exports = {
     contactme,
     getallmessages,
-    getsinglemessage
+    getsinglemessage,
+    deletemessage
 }
