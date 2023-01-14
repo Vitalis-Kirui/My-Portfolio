@@ -16,6 +16,10 @@ const contactSchema = new Schema({
     message: {
         type: String,
         required: true
+    },
+    status: {
+        type: String,
+        required: true
     }
 },
     {
