@@ -33,7 +33,23 @@ const getallmessages = (req, res) => {
     
 }
 
+// Getting a single message
+const getsinglemessage = (req, res) => { 
+
+    let id = req.params.id;
+    
+    Message.findById(id)
+        .then((message) => {
+            res.json({message: message});
+        })
+        .catch((error) => {
+            res.json({ message: "There was an error fetching message" })
+            console.error(error);
+        })
+};
+
 module.exports = {
     contactme,
-    getallmessages
+    getallmessages,
+    getsinglemessage
 }
