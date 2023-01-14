@@ -24,7 +24,8 @@ export class AppComponent implements OnInit {
       names: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.pattern(this.emailRegExp)]],
       phonenumber: [''],
-      message:['', [Validators.required]]
+      message: ['', [Validators.required]],
+      status: ['unread']
     })
 
   }
