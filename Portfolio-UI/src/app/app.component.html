@@ -420,25 +420,30 @@
 
             <div class="form-group">
                 <label for="" class="mb-1">NAMES</label>
-                <input type="text" class="form-control" name="name" formControlName="names">
+                <input type="text" class="form-control" name="name" formControlName="names"
+                [class.is-invalid]="names?.invalid && names?.dirty">
             </div>
 
             <div class="form-group">
-                <label for="" class="mt-3 mb-1">EMAIL</label>
-                <input type="email" class="form-control" name="email" formControlName="email">
+                <label for="" class="mt-3 mb-1">Email</label>
+                <input type="email" class="form-control" formControlName="email"
+                    [class.is-invalid]="email?.invalid && email?.dirty">
             </div>
 
             <div class="form-group">
                 <label for="" class="mt-3 mb-1">PHONE NUMBER</label>
-                <input type="number" class="form-control" name="phonenumber" formControlName="phonenumber">
+                <input type="number" class="form-control" name="phonenumber" formControlName="phonenumber"
+                [class.is-invalid]="phonenumber?.invalid && phonenumber?.dirty">
             </div>
 
             <div class="form-group">
                 <label for="" class="mt-3 mb-1">MESSAGE</label>
-                <textarea name="message" id="" cols="10" rows="5" class="form-control" formControlName="message"></textarea>
+                <textarea name="message" id="" cols="10" rows="5" class="form-control"
+                    formControlName="message"
+                    [class.is-invalid]="message?.invalid && message?.dirty"></textarea>
             </div>
 
-            <button class="btn btn-light btn-rounded mt-3" type="submit"><strong>SEND</strong></button>
+            <button class="btn btn-light btn-rounded mt-3" type="submit" [disabled]="contactForm.invalid"><strong>SEND</strong></button>
 
         </form>
 

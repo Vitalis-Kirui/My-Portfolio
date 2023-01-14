@@ -24,9 +24,9 @@ export class AppComponent implements OnInit {
 
     this.contactForm = this.fbService.group({
       names: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', Validators.required, Validators.pattern(this.emailRegExp)],
-      phonenumber: ['', Validators.pattern(this.phoneRegExp)],
-      message:['', Validators.required]
+      email: ['', [Validators.required, Validators.pattern(this.emailRegExp)]],
+      phonenumber: ['',[ Validators.pattern(this.phoneRegExp)]],
+      message:['', [Validators.required]]
     })
 
   }
