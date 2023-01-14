@@ -29,4 +29,4 @@ app.get('', (req, res) => {
 })
 
 // Using contact me routes
-// app.use('/contact', contactroutes);
+app.use('/contact', contactroutes);
