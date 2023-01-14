@@ -27,3 +27,6 @@ mongoose.connect(config.dbConnection)
 app.get('', (req, res) => { 
     res.json({ status: 200, ok : true })
 })
+
+// Using contact me routes
+app.use('/contact', contactroutes);
