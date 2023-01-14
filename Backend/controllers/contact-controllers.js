@@ -1,23 +1,39 @@
-const { json } = require('body-parser');
 const Message = require('../models/contact-model')
 
-const contactMe = (req, res) => { 
+//Saving a message
+const contactme = (req, res) => { 
 
     let messageBody = req.body;
 
     let message = new Message(messageBody);
 
-    message.save((error, savedmessage) => {
-        if (error) {
+    message.save()
+        .then((savedmessage) => {
+            res.json({ ok: true, message: "Message saved successfully" })
+        })
+        .catch((error) => { 
+            res.json({ ok: false, message: "Error saving message" });
             console.error(error);
-        }
-        else { 
-            res,json({ok: true, message: "Messave saved successfully"})
-        }
-     });
+        });
 
 };
 
+// Fetching all the messages sent in order of time sent
+const getallmessages = (req, res) => {
+
+    Message.find().sort({ "createdAt": -1 })
+        .then((messages) => {
+            let totalmessages = messages.length;
+            res.json({ Total: totalmessages, messages: messages });
+        })
+        .catch((error) => {
+            res.json({ ok: false, message: "There was an error fetching messages" });
+            console.error(error);
+         });
+    
+}
+
 module.exports = {
-    contactMe
+    contactme,
+    getallmessages
 }
