@@ -31,11 +31,27 @@ export class AppComponent implements OnInit {
 
   }
 
+  // GETTER FUNCTIONS
+
+  get names() {
+    return this.contactForm.get('names');
+  }
+
+  get email() {
+    return this.contactForm.get('email');
+  }
+
+  get phonenumber() {
+    return this.contactForm.get('phonenumber');
+  }
+
+  get message() {
+    return this.contactForm.get('message');
+  }
+
   // Submit form function
   sendMessage() {
     console.log(this.contactForm.value)
   }
-
-
 
 }
