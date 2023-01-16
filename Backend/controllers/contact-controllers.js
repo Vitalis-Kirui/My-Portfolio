@@ -80,10 +80,34 @@ const getunreadmessages = (req, res) => {
 
 };
 
+// Reading a message
+const readMessage = (req, res) => { 
+    let id = req.params.id;
+
+    let newstatus = {
+        names: req.body.names,
+        email: req.body.email,
+        phonenumber: req.body.phonenumber,
+        message: req.body.message,
+        status:'read'
+    }
+
+    Message.findByIdAndUpdate(id, newstatus)
+        .then((updatedmessage) => {
+            res.json({ ok: true, message: "Message updated successfully" })
+        }).
+        catch((error) => {
+            res.json({ ok: false, message: "Error updating message" });
+            console.log(error);
+        })
+
+};
+
 module.exports = {
     contactme,
     getallmessages,
     getsinglemessage,
     deletemessage,
-    getunreadmessages
+    getunreadmessages,
+    readMessage
 }
