@@ -17,4 +17,7 @@ router.delete('/delete-message/:id', contactcontrollers.deletemessage);
 // Get unread messages
 router.get('/get-unread-messages', contactcontrollers.getunreadmessages);
 
+// Read messages
+router.get('/read-message/:id', contactcontrollers.readMessage);
+
 module.exports = router;
