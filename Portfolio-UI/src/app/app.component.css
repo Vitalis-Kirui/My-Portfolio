@@ -239,13 +239,6 @@ h2{
     padding-top: 7%;
 }
 
-/* My development process media queries */
-@media screen and (min-width:1500px) {
-    .projectBirth h1, .coding h1 {
-            padding-left: 50%;
-        } 
-}
-
 /* Projects and designs styles */
 #projectsAndDesign{
     background-color: rgba(26, 29, 95, 1);
