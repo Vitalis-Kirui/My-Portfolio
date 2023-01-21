@@ -3,7 +3,13 @@ const Message = require('../models/contact-model')
 //Saving a message
 const contactme = (req, res) => { 
 
-    let messageBody = req.body;
+    let messageBody = {
+        names: req.body.names,
+        email: req.body.email,
+        phonenumber: req.body.phonenumber,
+        message: req.body.message,
+        status:'unread'
+    }
 
     let message = new Message(messageBody);
 
