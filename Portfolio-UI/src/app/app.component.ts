@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MessageService } from './Services/message.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
     // Email validation expression
   emailRegExp = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
 
-  constructor(private fbService : FormBuilder) { };
+  constructor(private fbService : FormBuilder, private messageService : MessageService) { };
 
   ngOnInit() { 
 
@@ -50,6 +51,15 @@ export class AppComponent implements OnInit {
   // Submit form function
   sendMessage() {
     console.log(this.contactForm.value)
+
+    this.messageService.sentMessage(this.contactForm.value)
+      .subscribe(success => {
+          console.log("Message sent successfully")
+      },
+        error => {
+          console.log("Error sending message", error)
+        }
+      )
 
     this.contactForm.reset();
   }
